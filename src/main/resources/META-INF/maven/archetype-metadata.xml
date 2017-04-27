@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="basic"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <requiredProperties>
+    <requiredProperty key="groupId">
+      <defaultValue>nc.noumea.mairie</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="appName"/>
+    <requiredProperty key="artifactId">
+      <defaultValue>${appName}-pandoc</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="version">
+      <defaultValue>1.00.00-SNAPSHOT</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="pandocVersion">
+      <defaultValue>1.16.0.2</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.md</include>
+        <include>**/*.jpg</include>
+        <include>.travis.yml</include>
+        <include>README.md</include>
+        <include>title.txt</include>
+        <include>Makefile</include>
+        <include>pom.xml</include>
+        <include>metadata.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
