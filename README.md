@@ -1,2 +1,3 @@
 # archetype-pandoc
-Archetype maven pour générer un projet pandoc
+
+Archetype maven to generate a runnable pandoc skeleton.
