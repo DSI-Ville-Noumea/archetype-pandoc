@@ -11,7 +11,7 @@
       <defaultValue>${appName}-pandoc</defaultValue>
     </requiredProperty>
     <requiredProperty key="version">
-      <defaultValue>1.00.00-SNAPSHOT</defaultValue>
+      <defaultValue>1.00.00</defaultValue>
     </requiredProperty>
     <requiredProperty key="pandocVersion">
       <defaultValue>1.16.0.2</defaultValue>
