@@ -24,13 +24,18 @@
       <includes>
         <include>**/*.xml</include>
         <include>**/*.md</include>
-        <include>**/*.jpg</include>
         <include>.travis.yml</include>
         <include>README.md</include>
         <include>title.txt</include>
         <include>Makefile</include>
         <include>pom.xml</include>
         <include>metadata.xml</include>
+      </includes>
+    </fileSet>
+    <fileSet>
+      <directory></directory>
+      <includes>
+        <include>**/*.jpg</include>
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
