@@ -4,7 +4,7 @@
 
   <groupId>nc.noumea.mairie</groupId>
   <artifactId>archetype-pandoc</artifactId>
-  <version>1.00.00</version>
+  <version>1.00.01-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>archetype-pandoc</name>
