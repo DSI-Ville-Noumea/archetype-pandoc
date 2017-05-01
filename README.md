@@ -14,7 +14,7 @@ Archetype maven to generate a runnable pandoc skeleton.
 
 ```
 >> cd ..
->> mvn archetype:generate -DarchetypeArtifactId=archetype-pandoc -DarchetypeGroupId=nc.noumea.mairie -DarchetypeVersion=1.00.00 -DappName=myApp
+>> mvn archetype:generate -DarchetypeArtifactId=archetype-pandoc -DarchetypeGroupId=nc.noumea.mairie -DarchetypeVersion=1.00.01 -DappName=myApp
 ```
 
 
