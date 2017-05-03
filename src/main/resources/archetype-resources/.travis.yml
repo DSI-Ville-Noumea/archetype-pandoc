@@ -19,7 +19,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: ## A SAISIR ##
+    secure: # A SAISIR #
   file: ${RELEASE_PDF_FILE}
   skip_cleanup: true
   on:
@@ -27,4 +27,4 @@ deploy:
     repo: DSI-Ville-Noumea/${appName}-pandoc
 notifications:
   slack:
-    secure: ## A SAISIR ##
+    secure: # A SAISIR #
