@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/DSI-Ville-Noumea/pandoc-archetype.svg?branch=master)](https://travis-ci.org/DSI-Ville-Noumea/pandoc-archetype)
+
 # archetype-pandoc
 
 Archetype maven to generate a runnable pandoc skeleton.
