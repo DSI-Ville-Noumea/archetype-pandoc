@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nc.noumea.mairie</groupId>
-	<artifactId>archetype-pandoc</artifactId>
+	<artifactId>pandoc-archetype</artifactId>
 	<version>1.00.02-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 
-	<name>archetype-pandoc</name>
+	<name>pandoc-archetype</name>
 
 	<build>
 		<extensions>
@@ -60,8 +60,8 @@
 	</licenses>
 
 	<scm>
-		<connection>https://github.com/DSI-Ville-Noumea/archetype-pandoc.git</connection>
-		<developerConnection>https://github.com/DSI-Ville-Noumea/archetype-pandoc.git</developerConnection>
-		<url>https://github.com/DSI-Ville-Noumea/archetype-pandoc.git</url>
+		<connection>https://github.com/DSI-Ville-Noumea/pandoc-archetype.git</connection>
+		<developerConnection>https://github.com/DSI-Ville-Noumea/pandoc-archetype.git</developerConnection>
+		<url>https://github.com/DSI-Ville-Noumea/pandoc-archetype.git</url>
 	</scm>
 </project>
