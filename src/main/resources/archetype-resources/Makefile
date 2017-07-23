@@ -1,14 +1,15 @@
 BUILD = build
 TITLE = title.txt
-METADATA = metadata.xml
+METADATA_EPUB = metadata_epub.xml
+METADATA_PDF = metadata_pdf.yaml
+METADATA_HTML = metadata_html.yaml
 TOC = --toc --toc-depth=3
 COVER_IMAGE = images/${appName}.jpg
-LATEX_CLASS = report
 
 ## Profiles
 ## Users
 BOOKNAME_USER = doc_utilisateur
-CHAPTERS_USER = chapitres/chap_01.md \
+CHAPTERS_USER = chapitres/chap_01.md chapitres/chap_02.md
 
 all: book
 
@@ -26,16 +27,16 @@ pdf: $(BUILD)/pdf/$(BOOKNAME_USER).pdf
 ## Generate epub for profile USER
 $(BUILD)/epub/$(BOOKNAME_USER).epub: $(TITLE) $(CHAPTERS_USER)
 	mkdir -p $(BUILD)/epub
-	pandoc $(TOC) -S --epub-metadata=$(METADATA) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
+	pandoc $(TOC) -S --epub-metadata=$(METADATA_EPUB) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
 
 ## Generate html for profile USER
 $(BUILD)/html/$(BOOKNAME_USER).html: $(CHAPTERS_USER)
 	mkdir -p $(BUILD)/html
-	pandoc $(TOC) --standalone --to=html5 -o $@ $^
+	pandoc $(TOC) $(METADATA_HTML) --css css/pandoc.css --number-sections --self-contained -o $@ $^
 
 ## Generate pdf for profile USER
-$(BUILD)/pdf/$(BOOKNAME_USER).pdf: $(TITLE) $(CHAPTERS_USER)
+$(BUILD)/pdf/$(BOOKNAME_USER).pdf: $(CHAPTERS_USER)
 	mkdir -p $(BUILD)/pdf
-	pandoc $(TOC) --wrap=preserve --latex-engine=xelatex -V geometry:"top=1.5cm, bottom=1.5cm, left=1cm, right=1cm" -V documentclass=$(LATEX_CLASS) -o $@ $^
+	pandoc $(TOC) -V --latex-engine=xelatex --template=./template/my-pandoc-latex.template --number-sections $(METADATA_PDF) -V -s -o $@ $^
 
 .PHONY: all book clean epub html pdf
