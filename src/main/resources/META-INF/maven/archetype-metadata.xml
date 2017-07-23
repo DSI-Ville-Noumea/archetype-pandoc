@@ -24,6 +24,9 @@
       <includes>
         <include>**/*.xml</include>
         <include>**/*.md</include>
+        <include>**/*.yaml</include>
+        <include>**/*.css</include>
+        <include>**/*.template</include>
         <include>.travis.yml</include>
         <include>README.md</include>
         <include>title.txt</include>

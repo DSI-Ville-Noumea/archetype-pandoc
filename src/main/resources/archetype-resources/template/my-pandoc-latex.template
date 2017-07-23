@@ -13,14 +13,15 @@ $endif$
   \graphicspath\expandafter{\expandafter{\filename@area}}%
   \org@subfile{#1}%
 }
-\makeatother
-\usepackage{titling}
-\pretitle{%
-  \begin{center}
-  \LARGE
-  \includegraphics[width=4cm,height=6cm]{images/pdc.png}\\[\bigskipamount]
-}
-\posttitle{\end{center}}
+% Uncomment for cover image
+% \makeatother
+% \usepackage{titling}
+% \pretitle{%
+%   \begin{center}
+%   \LARGE
+%   \includegraphics[width=4cm,height=6cm]{images/DSI-logo-seul-or.png}\\[\bigskipamount]
+% }
+% \posttitle{\end{center}}
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
