@@ -27,7 +27,7 @@ pdf: $(BUILD)/pdf/$(BOOKNAME_USER).pdf
 ## Generate epub for profile USER
 $(BUILD)/epub/$(BOOKNAME_USER).epub: $(TITLE) $(CHAPTERS_USER)
 	mkdir -p $(BUILD)/epub
-	pandoc $(TOC) -S --epub-metadata=$(METADATA_EPUB) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
+	pandoc $(TOC) -smart --epub-metadata=$(METADATA_EPUB) --epub-cover-image=$(COVER_IMAGE) -o $@ $^
 
 ## Generate html for profile USER
 $(BUILD)/html/$(BOOKNAME_USER).html: $(CHAPTERS_USER)
